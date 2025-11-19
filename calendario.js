@@ -28,20 +28,20 @@ const nomiSquadre = {
    Elenco Partite
 ================================ */
 const partite = [
-  { casa: "Spezia", trasf: "Savona", sc1: 0, sc2: 29, data: "2025-10-19", ora: "15:30" },
-  { casa: "Savona", trasf: "Genova", sc1: 36, sc2: 7, data: "2025-10-26", ora: "14:30" },
-  { casa: "Savona", trasf: "Amatori", sc1: 36, sc2: 17, data: "2025-11-02", ora: "14:30" },
-  { casa: "Province", trasf: "Savona", sc1: null, sc2: null, data: "2025-11-30", ora: "14:30" },
-  { casa: "Savona", trasf: "Recco", sc1: null, sc2: null, data: "2025-12-14", ora: "14:30" },
-  { casa: "Imperia", trasf: "Savona", sc1: null, sc2: null, data: "2026-01-18", ora: "14:30" },
-  { casa: "Savona", trasf: "Cogoleto", sc1: null, sc2: null, data: "2026-01-25", ora: "14:30" },
-  { casa: "Savona", trasf: "Spezia", sc1: null, sc2: null, data: "2026-02-01", ora: "14:30" },
-  { casa: "Genova", trasf: "Savona", sc1: null, sc2: null, data: "2026-02-22", ora: "14:30" },
-  { casa: "Amatori", trasf: "Savona", sc1: null, sc2: null, data: "2026-03-01", ora: "14:30" },
-  { casa: "Savona", trasf: "Province", sc1: null, sc2: null, data: "2026-03-15", ora: "14:30" },
-  { casa: "Recco", trasf: "Savona", sc1: null, sc2: null, data: "2026-03-22", ora: "14:30" },
-  { casa: "Savona", trasf: "Imperia", sc1: null, sc2: null, data: "2026-04-12", ora: "15:30" },
-  { casa: "Cogoleto", trasf: "Savona", sc1: null, sc2: null, data: "2026-04-19", ora: "15:30" }
+  { casa: "Spezia", trasf: "Savona", sc1: 0, sc2: 29, data: "2025-10-19", ora: "15:30" , luogo: "La Spezia"},
+  { casa: "Savona", trasf: "Genova", sc1: 36, sc2: 7, data: "2025-10-26", ora: "14:30" , luogo: "Stadio Fontanassa, Savona"},
+  { casa: "Savona", trasf: "Amatori", sc1: 36, sc2: 17, data: "2025-11-02", ora: "14:30" , luogo: "Stadio Fontanassa, Savona"},
+  { casa: "Province", trasf: "Savona", sc1: null, sc2: null, data: "2025-11-30", ora: "14:30" , luogo: "Campo Carlo Androne, Recco"},
+  { casa: "Savona", trasf: "Recco", sc1: null, sc2: null, data: "2025-12-14", ora: "14:30" , luogo: "Stadio Fontanassa, Savona"},
+  { casa: "Imperia", trasf: "Savona", sc1: null, sc2: null, data: "2026-01-18", ora: "14:30" , luogo: "Imperia"},
+  { casa: "Savona", trasf: "Cogoleto", sc1: null, sc2: null, data: "2026-01-25", ora: "14:30" , luogo: "Stadio Fontanassa, Savona"},
+  { casa: "Savona", trasf: "Spezia", sc1: null, sc2: null, data: "2026-02-01", ora: "14:30" , luogo: "Stadio Fontanassa, Savona"},
+  { casa: "Genova", trasf: "Savona", sc1: null, sc2: null, data: "2026-02-22", ora: "14:30" , luogo: "Stadio Carlini Bollesan, Genova"},
+  { casa: "Amatori", trasf: "Savona", sc1: null, sc2: null, data: "2026-03-01", ora: "14:30" , luogo: "Stadio Carlini Bollesan, Genova"},
+  { casa: "Savona", trasf: "Province", sc1: null, sc2: null, data: "2026-03-15", ora: "14:30" , luogo: "Stadio Fontanassa, Savona"},
+  { casa: "Recco", trasf: "Savona", sc1: null, sc2: null, data: "2026-03-22", ora: "14:30" , luogo: "Campo Carlo Androne, Recco"},
+  { casa: "Savona", trasf: "Imperia", sc1: null, sc2: null, data: "2026-04-12", ora: "15:30" , luogo: "Stadio Fontanassa, Savona"},
+  { casa: "Cogoleto", trasf: "Savona", sc1: null, sc2: null, data: "2026-04-19", ora: "15:30" , luogo: "Cogoleto"}
 ];
 
 
@@ -75,9 +75,9 @@ partite.forEach(p => {
   const nomeAway = nomiSquadre[away];
 
   const resHome = nonGiocata ? "" :
-    (p.sc1 > p.sc2 ? "win" : (p.sc1 < p.sc2 ? "loss" : "draw"));
+    (p.sc1 > p.sc2 ? "VINCENTE" : (p.sc1 < p.sc2 ? "PREDENTE" : "PAREGGIO"));
   const resAway = nonGiocata ? "" :
-    (p.sc2 > p.sc1 ? "win" : (p.sc2 < p.sc1 ? "loss" : "draw"));
+    (p.sc2 > p.sc1 ? "VINCENTE" : (p.sc2 < p.sc1 ? "PERDENTE" : "PAREGGIO"));
 
   let badge = "";
   if (nonGiocata && !nextFound) {
@@ -110,7 +110,7 @@ partite.forEach(p => {
       <div class="match-footer">
         <div class="item">📅 ${new Date(p.data).toLocaleDateString("it-IT")}</div>
         <div class="item">🕒 ${p.ora}</div>
-
+        <div class="item">📍 ${p.luogo}</div>
       </div>
     </div>
   `;

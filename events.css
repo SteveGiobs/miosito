@@ -175,7 +175,7 @@ body{
     text-align: center;
   }
   
-   .extra {
+   .classifica-row.extra {
         display: none;
     }
 }
@@ -219,25 +219,6 @@ body{
     color: white;
 }
 
-/*.button{
-	background-color:white;
-	font-size:20px;
-	padding: 16px 32px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    color: black;
-	display: inline-block;
-	justify-content: center;
-	align-items: center;
-	margin: 25% 2px;
-	transition-duration: 0.4s;
-	cursor: pointer;
-	 display: flex;
-  justify-content: center; 
-  gap: 20px;               
-  width: 100%;
-
-}*/
 
 /* ===== CLASSIFICA ===== */
 .classifica-row {

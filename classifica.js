@@ -173,8 +173,8 @@ classifica.forEach((s, i) => {
       <div class="logo"><img src="${s.logo}"></div>
       <div class="squadra">${s.nome.toUpperCase()}</div>
       <div class="dati">${s.punti} pt</div>
-      <div class="dati">${s.vinte}V / ${s.pareggiate}P / ${s.perse}S</div>
-      <div class="dati">Diff: ${s.diff}</div>
+      <div class="dati extra">${s.vinte}V / ${s.pareggiate}P / ${s.perse}S</div>
+      <div class="dati extra">Diff: ${s.diff}</div>
     </div>
   `;
 });

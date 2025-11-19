@@ -12,6 +12,18 @@ const LOGHI = {
 	amatori:"Logo_Amatori.png"
 };
 
+const nomiSquadre = {
+  savona: "Savona",
+	spezia: "RFC Spezia",
+	genova: "Cus Genova",
+	province: "Province dell'Ovest",
+	recco: "Pro Recco",
+	imperia: "Imperia",
+	cogoleto: "CFFS Vespe Cogoleto",
+	amatori: "Amatori Genova"
+  
+};
+
 /* ==========================================================
    PARTITE DEL CAMPIONATO
 ========================================================== */
@@ -98,7 +110,7 @@ const squadre = {};
 function aggiungiSquadra(nome) {
   if (!squadre[nome]) {
     squadre[nome] = {
-      nome,
+      nome: nomiSquadre[nome.toLowerCase()],
       logo: LOGHI[nome.toLowerCase()] || "",
       giocate: 0,
       vinte: 0,
@@ -124,6 +136,7 @@ partite.forEach(p => {
 
   const home = squadre[p.casa];
   const away = squadre[p.trasf];
+
 
   home.giocate++;
   away.giocate++;
@@ -167,6 +180,8 @@ const classifica = Object.values(squadre)
 const tab = document.getElementById("classifica");
 
 classifica.forEach((s, i) => {
+
+
   tab.innerHTML += `
     <div class="classifica-row">
       <div class="posizione">${i + 1}</div>

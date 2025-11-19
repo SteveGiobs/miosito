@@ -12,6 +12,18 @@ const LOGHI = {
 	amatori:"Logo_Amatori.png"
 };
 
+const nomiSquadre = {
+  savona: "Savona",
+	spezia: "RFC Spezia",
+	genova: "Cus Genova",
+	province: "Province dell'Ovest",
+	recco: "Pro Recco",
+	imperia: "Imperia",
+	cogoleto: "CFFS Vespe Cogoleto",
+	amatori: "Amatori Genova"
+  
+};
+
 /* ================================
    Elenco Partite
 ================================ */
@@ -31,6 +43,7 @@ const partite = [
   { casa: "Savona", trasf: "Imperia", sc1: null, sc2: null, data: "2026-04-12", ora: "15:30" },
   { casa: "Cogoleto", trasf: "Savona", sc1: null, sc2: null, data: "2026-04-19", ora: "15:30" }
 ];
+
 
 /* ================================
    GENERAZIONE CARD
@@ -58,6 +71,8 @@ partite.forEach(p => {
   const away = p.trasf.toLowerCase();
   const logoHome = LOGHI[home] || "";
   const logoAway = LOGHI[away] || "";
+  const nomeHome = nomiSquadre[home];
+  const nomeAway = nomiSquadre[away];
 
   const resHome = nonGiocata ? "" :
     (p.sc1 > p.sc2 ? "win" : (p.sc1 < p.sc2 ? "loss" : "draw"));
@@ -74,7 +89,7 @@ partite.forEach(p => {
     <div class="match-card ${nonGiocata ? "future-match" : ""}">
       <div class="match-main">
         <div class="team home">
-          <span class="name">${p.casa.toUpperCase()} </span>
+          <span class="name">${nomeHome.toUpperCase()} </span>
           <img src="${logoHome}">
           ${!nonGiocata ? `<span class='result ${resHome}'>${resHome.toUpperCase()}</span>` : ""}
         </div>
@@ -86,7 +101,7 @@ partite.forEach(p => {
 		</div>
 
         <div class="team away">
-          <span class="name">${p.trasf.toUpperCase()}</span>
+          <span class="name">${nomeAway.toUpperCase()}</span>
           <img src="${logoAway}">
           ${!nonGiocata ? `<span class='result ${resAway}'>${resAway.toUpperCase()}</span>` : ""}
         </div>

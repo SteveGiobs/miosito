@@ -1,0 +1,71 @@
+[
+  { "casa": "Genova",   "trasf": "Cogoleto",  "sc1": 17,   "sc2": 5 ,    "pt1": 4, "pt2": 0},
+  { "casa": "Imperia",  "trasf": "Amatori",   "sc1": 3,    "sc2": 37 ,   "pt1": 0, "pt2": 5},
+  { "casa": "Province", "trasf": "Recco",     "sc1": 23,   "sc2": 15 ,   "pt1": 4, "pt2": 0},
+  { "casa": "Spezia",   "trasf": "Savona",    "sc1": 0,    "sc2": 29 ,   "pt1": 0, "pt2": 5},
+  
+  { "casa": "Cogoleto", "trasf": "Spezia",    "sc1": 31,   "sc2": 20 ,   "pt1": 5, "pt2": 0},
+  { "casa": "Savona",   "trasf": "Genova",    "sc1": 36,   "sc2": 7 ,    "pt1": 5, "pt2": 0},
+  { "casa": "Recco",    "trasf": "Imperia",   "sc1": 46,   "sc2": 5 ,    "pt1": 5, "pt2": 0},
+  { "casa": "Amatori",  "trasf": "Province",  "sc1": 3,    "sc2": 20 ,   "pt1": 0, "pt2": 4},
+  
+  { "casa": "Recco",    "trasf": "Cogoleto",  "sc1": 19,   "sc2": 10 ,   "pt1": 4, "pt2": 0},
+  { "casa": "Spezia",   "trasf": "Imperia",   "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  { "casa": "Savona",   "trasf": "Amatori",   "sc1": 36,   "sc2": 17 ,   "pt1": 5, "pt2": 0},
+  { "casa": "Genova",   "trasf": "Province",  "sc1": 22,   "sc2": 8 ,    "pt1": 5, "pt2": 0},
+  
+  { "casa": "Genova",   "trasf": "Cogoleto",  "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  { "casa": "Imperia",  "trasf": "Amatori",   "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  { "casa": "Province", "trasf": "Recco",     "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  { "casa": "Spezia",   "trasf": "Savona",    "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  
+  { "casa": "Genova",   "trasf": "Cogoleto",  "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  { "casa": "Imperia",  "trasf": "Amatori",   "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  { "casa": "Province", "trasf": "Recco",     "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  { "casa": "Spezia",   "trasf": "Savona",    "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  
+  { "casa": "Genova",   "trasf": "Cogoleto",  "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  { "casa": "Imperia",  "trasf": "Amatori",   "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  { "casa": "Province", "trasf": "Recco",     "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  { "casa": "Spezia",   "trasf": "Savona",    "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  
+  { "casa": "Genova",   "trasf": "Cogoleto",  "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  { "casa": "Imperia",  "trasf": "Amatori",   "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  { "casa": "Province", "trasf": "Recco",     "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  { "casa": "Spezia",   "trasf": "Savona",    "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  
+  { "casa": "Genova",   "trasf": "Cogoleto",  "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  { "casa": "Imperia",  "trasf": "Amatori",   "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  { "casa": "Province", "trasf": "Recco",     "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  { "casa": "Spezia",   "trasf": "Savona",    "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  
+  { "casa": "Genova",   "trasf": "Cogoleto",  "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  { "casa": "Imperia",  "trasf": "Amatori",   "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  { "casa": "Province", "trasf": "Recco",     "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  { "casa": "Spezia",   "trasf": "Savona",    "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  
+  { "casa": "Genova",   "trasf": "Cogoleto",  "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  { "casa": "Imperia",  "trasf": "Amatori",   "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  { "casa": "Province", "trasf": "Recco",     "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  { "casa": "Spezia",   "trasf": "Savona",    "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  
+  { "casa": "Genova",   "trasf": "Cogoleto",  "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  { "casa": "Imperia",  "trasf": "Amatori",   "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  { "casa": "Province", "trasf": "Recco",     "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  { "casa": "Spezia",   "trasf": "Savona",    "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  
+  { "casa": "Genova",   "trasf": "Cogoleto",  "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  { "casa": "Imperia",  "trasf": "Amatori",   "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  { "casa": "Province", "trasf": "Recco",     "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  { "casa": "Spezia",   "trasf": "Savona",    "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  
+  { "casa": "Genova",   "trasf": "Cogoleto",  "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  { "casa": "Imperia",  "trasf": "Amatori",   "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  { "casa": "Province", "trasf": "Recco",     "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  { "casa": "Spezia",   "trasf": "Savona",    "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  
+  { "casa": "Genova",   "trasf": "Cogoleto",  "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  { "casa": "Imperia",  "trasf": "Amatori",   "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  { "casa": "Province", "trasf": "Recco",     "sc1": null, "sc2": null , "pt1": 0, "pt2": 0},
+  { "casa": "Spezia",   "trasf": "Savona",    "sc1": null, "sc2": null , "pt1": 0, "pt2": 0} 
+]

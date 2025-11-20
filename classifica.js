@@ -44,11 +44,13 @@ function aggiungiSquadra(nome) {
     };
   }
 }
+
 fetch('https://SteveGiobs.github.io/miosito/partiteClassifica.json')
   .then(res => res.json())
   .then(partiteCalendario => {
     partiteCalendario.forEach(p => {
       console.log(p.casa, p.trasf, p.sc1, p.sc2, p.pt1, p.pt2);
+    })
 
         partiteCalendario.forEach(p => {
           aggiungiSquadra(p.casa);
@@ -116,5 +118,4 @@ fetch('https://SteveGiobs.github.io/miosito/partiteClassifica.json')
             </div>
           `;
         })
-    })
   });
